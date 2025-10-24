@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body onload="init()">
+
+<header>
+    <h1>Calculadora Geométrica</h1>
+</header>
+
+<nav>
+    <button id="btnAreas" class="activo">Áreas</button>
+    <button id="btnPerimetros">Perímetros</button>
+    <button id="btnVolumenes">Volúmenes</button>
+</nav>
+
+<!-- AREAS -->
+<section id="areas" class="activo">
+    <div class="contenedor">
+        <h2>Cálculo de Áreas</h2>
+        <select id="figuraArea">
+            <option value="">Selecciona una figura</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="triangulo">Triángulo</option>
+            <option value="circulo">Círculo</option>
+        </select>
+
+        <div id="inputsArea"></div>
+        <button class="boton" id="btnCalcularArea">Calcular Área</button>
+
+        <div class="mensaje exito hide" id="successArea">
+            <div class="resultado-box">Resultado: <span id="resultadoArea"></span></div>
+        </div>
+        <div class="mensaje error hide" id="errorArea">Error: ingresa valores válidos.</div>
+    </div>
+</section>
+
+<!-- PERÍMETROS -->
+<section id="perimetros">
+    <div class="contenedor">
+        <h2>Cálculo de Perímetros</h2>
+        <select id="figuraPerimetro">
+            <option value="">Selecciona una figura</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="triangulo">Triángulo</option>
+            <option value="circulo">Círculo</option>
+        </select>
+
+        <div id="inputsPerimetro"></div>
+        <button class="boton" id="btnCalcularPerimetro">Calcular Perímetro</button>
+
+        <div class="mensaje exito hide" id="successPerimetro">
+            <div class="resultado-box">Resultado: <span id="resultadoPerimetro"></span></div>
+        </div>
+        <div class="mensaje error hide" id="errorPerimetro">Error: ingresa valores válidos.</div>
+    </div>
+</section>
+
+<!-- VOLÚMENES -->
+<section id="volumenes">
+    <div class="contenedor">
+        <h2>Cálculo de Volúmenes</h2>
+        <select id="cuerpoVolumen">
+            <option value="">Selecciona un cuerpo</option>
+            <option value="cubo">Cubo</option>
+            <option value="prisma">Prisma rectangular</option>
+            <option value="esfera">Esfera</option>
+        </select>
+
+        <div id="inputsVolumen"></div>
+        <button class="boton" id="btnCalcularVolumen">Calcular Volumen</button>
+
+        <div class="mensaje exito hide" id="successVolumen">
+            <div class="resultado-box">Resultado: <span id="resultadoVolumen"></span></div>
+        </div>
+        <div class="mensaje error hide" id="errorVolumen">Error: ingresa valores válidos.</div>
+    </div>
+</section>
+
+<script src="/js/index.js"></script>
+</body>
+</html>
